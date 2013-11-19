@@ -1,0 +1,14 @@
+[options]
+      UseSyslog
+
+[openSSH]
+      sequence    = <%= @sequence_open %>
+      seq_timeout = 5
+      command     = /sbin/iptables -A INPUT -s %IP% -p tcp --dport <%= @port_to_manage%> -j ACCEPT
+      tcpflags    = syn
+
+[closeSSH]
+      sequence    = <%= @sequence_close %>
+      seq_timeout = 5
+      command     = /sbin/iptables -D INPUT -s %IP% -p tcp --dport <%= @port_to_manage%> -j ACCEPT
+      tcpflags    = syn

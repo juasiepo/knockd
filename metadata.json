@@ -1,0 +1,30 @@
+{
+  "name": "juan-knockd",
+  "version": "0.1.0",
+  "summary": "",
+  "author": "",
+  "description": "",
+  "dependencies": [],
+  "types": [],
+  "checksums": {
+    "Modulefile": "bfcfda66c60270a661a87c58ef19f9e8",
+    "README.markdown": "692b8245423a78fd941fd0ae7eabb627",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "files/knockd": "7db9f382c27cc876acab9195924d1308",
+    "manifests/config.pp": "161e653174d481f3d77d66dc48fc19f6",
+    "manifests/init.pp": "c235d7b555c47290b5d456365ede1b5c",
+    "manifests/package.pp": "5713e9ee902b36ecfc6681cc9e171589",
+    "manifests/params.pp": "91c5b22a66939420b6d4b96e12a74bfa",
+    "manifests/service.pp": "f4a4aadccfd78f7399a9f8f159e661a3",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "templates/knockd.conf.erb": "780466e3bf2986c73b848dd764233b3f",
+    "templates/open_close_knockd.conf.erb": "4bac79e3ce86d800fa2928547e201609",
+    "templates/open_timeout_knockd.conf.erb": "0c778662400d88b8ff32d3e83f87b20a",
+    "templates/text_sequence_knockd.conf.erb": "9b08c3edb9eb7c9a9b76be8d60b12d5e",
+    "tests/init.pp": "36cf35ba076169b062b5afd45be4c575"
+  },
+  "source": "",
+  "project_page": "",
+  "license": ""
+}
