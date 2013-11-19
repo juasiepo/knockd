@@ -1,8 +1,8 @@
 {
-  "name": "juan-knockd",
+  "name": "juasiepo-knockd",
   "version": "0.1.0",
   "summary": "",
-  "author": "",
+  "author": "Juan Sierra Pons",
   "description": "",
   "dependencies": [],
   "types": [],
@@ -25,6 +25,6 @@
     "tests/init.pp": "36cf35ba076169b062b5afd45be4c575"
   },
   "source": "",
-  "project_page": "",
+  "project_page": "https://github.com/juasiepo/knockd/",
   "license": ""
 }
