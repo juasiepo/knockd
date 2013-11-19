@@ -74,7 +74,7 @@ It also install a port knocker client
 
 To open the port:
  
-knock hostname 4000:udp 4000:tcp ,4000:udp
+knock hostname 4000:udp 4000:tcp 4000:udp
 
 To close the port:
 
