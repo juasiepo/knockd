@@ -26,6 +26,7 @@ Advanced example :
       sequence_open  => '4000:udp,4000:tcp,4000:udp',
       sequence_close => '4001:tcp,4001:udp,4001:tcp',
       port_to_manage => '22',
+      interface_to_manage => 'eth0'
     }
 
 Client Port knocker Usage
