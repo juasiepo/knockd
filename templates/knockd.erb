@@ -1,8 +1,4 @@
-################################################
-#
-# knockd's default file, for generic sys config
-#
-################################################
+# knockd: Managed by puppet.
 
 # control if we start knockd at init or not
 # 1 = start
@@ -12,4 +8,4 @@
 START_KNOCKD=1
 
 # command line options
-#KNOCKD_OPTS="-i eth1"
+KNOCKD_OPTS="-i <%= @interface_to_manage %>"
