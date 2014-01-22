@@ -40,3 +40,7 @@ knock hostname 4000:udp 4000:tcp 4000:udp
 To close the port:
 
 knock hostname 4001:tcp 4001:udp 4001:tcp
+
+PuppetForge:
+-----
+Module also available on PuppetForge: https://forge.puppetlabs.com/juasiepo/knockd
