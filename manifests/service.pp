@@ -3,7 +3,6 @@ class knockd::service {
     ensure    => running,
     hasstatus => false,
     enable    => true,
-    status    => "ps -ef|grep '/usr/sbin/knockd'",
     require   => Class['knockd::config'],
   }
 }
