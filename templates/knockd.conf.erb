@@ -4,7 +4,11 @@
 [openSSH]
       sequence    = <%= @sequence_open %>
       seq_timeout = 5
+      <% if @prepend_rule %>
+      command     = /sbin/iptables -I INPUT 1 -s %IP% -p tcp --dport <%= @port_to_manage%> -j ACCEPT
+      <% else %>
       command     = /sbin/iptables -A INPUT -s %IP% -p tcp --dport <%= @port_to_manage%> -j ACCEPT
+      <% end %>
       tcpflags    = syn
 
 [closeSSH]
