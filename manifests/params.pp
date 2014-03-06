@@ -7,4 +7,5 @@ class knockd::params {
   $port_to_manage = '22'
   $interface_to_manage = 'eth0'
   $service_default_config = '/etc/default/knockd'
+  $command_timeout = undef
 }
