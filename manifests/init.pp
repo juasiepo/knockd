@@ -19,6 +19,7 @@ class knockd (
   $port_to_manage = $knockd::params::port_to_manage,
   $interface_to_manage = $knockd::params::interface_to_manage,
   $command_timeout = $knockd::params::command_timeout,
+  $prepend_rule = $knockd::params::prepend_rule,
 ) inherits knockd::params {
   anchor {'knockd::start':}->
   class {'knockd::package':}->
