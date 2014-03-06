@@ -18,6 +18,7 @@ class knockd (
   $sequence_close = $knockd::params::sequence_close,
   $port_to_manage = $knockd::params::port_to_manage,
   $interface_to_manage = $knockd::params::interface_to_manage,
+  $command_timeout = $knockd::params::command_timeout,
 ) inherits knockd::params {
   anchor {'knockd::start':}->
   class {'knockd::package':}->
