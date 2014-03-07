@@ -47,10 +47,15 @@ Parameters:
 -----
 
 **sequence_open:** sequence to open the port.
+
 **sequence_close:** sequence to close the port.
+
 **port_to_manage:** port to be opened 
+
 **interface_to_manage:** network interface to be managed
+
 **command_timeout:** Optional parameter expressed in seconds. If exist will close the port after the timeout. 
+
 **prepend_rule:** false by default. If set to true the knock rule will be created using PREPEND as by default is created using APPEND
 
 PuppetForge:
