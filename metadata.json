@@ -1,7 +1,7 @@
 {
   "name": "juasiepo-knockd",
-  "version": "0.1.0",
-  "summary": "",
+  "version": "0.1.2",
+  "summary": "installs and configures knockd (a port knocking software).",
   "author": "Juan Sierra Pons",
   "description": "",
   "dependencies": [],
@@ -24,7 +24,7 @@
     "templates/text_sequence_knockd.conf.erb": "9b08c3edb9eb7c9a9b76be8d60b12d5e",
     "tests/init.pp": "36cf35ba076169b062b5afd45be4c575"
   },
-  "source": "",
+  "source": "https://github.com/juasiepo/knockd.git",
   "project_page": "https://github.com/juasiepo/knockd/",
   "license": ""
 }
