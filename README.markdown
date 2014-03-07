@@ -27,6 +27,8 @@ Advanced example :
       sequence_close => '4001:tcp,4001:udp,4001:tcp',
       port_to_manage => '22',
       interface_to_manage => 'eth0'
+      command_timeout     => '15',
+      prepend_rule        => false,
     }
 
 Client Port knocker Usage
@@ -40,6 +42,16 @@ knock hostname 4000:udp 4000:tcp 4000:udp
 To close the port:
 
 knock hostname 4001:tcp 4001:udp 4001:tcp
+
+Parameters:
+-----
+
+**sequence_open:** sequence to open the port.
+**sequence_close:** sequence to close the port.
+**port_to_manage:** port to be opened 
+**interface_to_manage:** network interface to be managed
+**command_timeout:** Optional parameter expressed in seconds. If exist will close the port after the timeout. 
+**prepend_rule:** false by default. If set to true the knock rule will be created using PREPEND as by default is created using APPEND
 
 PuppetForge:
 -----
