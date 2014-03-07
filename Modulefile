@@ -1,9 +1,9 @@
 name    'juasiepo-knockd'
-version '0.1.0'
-source ''
+version '0.1.2'
+source 'https://github.com/juasiepo/knockd.git'
 author 'Juan Sierra Pons'
 license ''
-summary ''
+summary 'installs and configures knockd (a port knocking software).'
 description ''
 project_page 'https://github.com/juasiepo/knockd/'
 
