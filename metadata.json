@@ -1,6 +1,6 @@
 {
   "name": "juasiepo-knockd",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "installs and configures knockd (a port knocking software).",
   "author": "Juan Sierra Pons",
   "description": "",
