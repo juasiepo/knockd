@@ -6,7 +6,11 @@
       sequence    = <%= @sequence_open %>
       seq_timeout   = 15
       tcpflags      = syn
+      <% if @prepend_rule %>
+      start_command = /sbin/iptables -I INPUT 1 -s %IP% -p tcp --dport <%=@port_to_manage %> -j ACCEPT
+      <% else %>
       start_command = /sbin/iptables -A INPUT -s %IP% -p tcp --dport <%=@port_to_manage %> -j ACCEPT
+      <% end %>
       cmd_timeout   = <%= @command_timeout %>
       stop_command  = /sbin/iptables -D INPUT -s %IP% -p tcp --dport <%= @port_to_manage %> -j ACCEPT
 
@@ -14,7 +18,11 @@
 [openSSH]
       sequence    = <%= @sequence_open %>
       seq_timeout = 5
+      <% if @prepend_rule %>
+      command     = /sbin/iptables -I INPUT 1 -s %IP% -p tcp --dport <%= @port_to_manage%> -j ACCEPT
+      <% else %>
       command     = /sbin/iptables -A INPUT -s %IP% -p tcp --dport <%= @port_to_manage%> -j ACCEPT
+      <% end %>
       tcpflags    = syn
 
 [closeSSH]

@@ -8,4 +8,5 @@ class knockd::params {
   $interface_to_manage = 'eth0'
   $service_default_config = '/etc/default/knockd'
   $command_timeout = undef
+  $prepend_rule = false
 }
