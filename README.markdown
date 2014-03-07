@@ -7,7 +7,11 @@ This is the knockd module.
 
 It installs and configures knockd (a port knocking software).
 
-For the moment only tested on debian wheezy (stable 7.2). It should work on jessie too.
+Compatibiliy:
+-----
+Tested on:
+ * Debian wheezy (stable 7.2) by mysel. It should work on jessie too but not tested
+ * Ubuntu 12.04 (precise) by Sergio Oliveira It should work on jessie too.
 
 Usage
 -----
