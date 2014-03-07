@@ -10,7 +10,7 @@ It installs and configures knockd (a port knocking software).
 Compatibiliy:
 -----
 Tested on:
- * Debian wheezy (stable 7.2) by mysel. It should work on jessie too but not tested
+ * Debian wheezy (stable 7.2) by myself. It should work on jessie too but not tested
  * Ubuntu 12.04 (precise) by Sergio Oliveira.
 
 Usage
